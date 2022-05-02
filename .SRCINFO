@@ -1,0 +1,16 @@
+pkgbase = elb-instance-status
+	pkgdesc = Small monitoring daemon for AWS Autoscaling Group Healthchecks
+	pkgver = 1.0.0
+	pkgrel = 1
+	url = https://github.com/Luzifer/elb-instance-status
+	arch = i686
+	arch = x86_64
+	license = Apache
+	makedepends = go
+	backup = etc/elb-instance-status.yml
+	source = elb-instance-status-1.0.0.tar.gz::https://github.com/Luzifer/elb-instance-status/archive/v1.0.0.tar.gz
+	source = elb-instance-status.yml
+	sha512sums = 92ec4ca9dd41375ac93a7f163b3a52af139d71fc711dffd1d073678c563da0a7336b93820c34f2844ed23d0cb76168b5a6ea8817a2ed8932c43902f397f05d46
+	sha512sums = bbd6a0d6f0ba8bcb9bf05b200b231b1b4ab7f37a069414b7075634298931825c843a8b4ab136a360be3009554915d5748939d60ddc7585ea0223c26a1402e97a
+
+pkgname = elb-instance-status

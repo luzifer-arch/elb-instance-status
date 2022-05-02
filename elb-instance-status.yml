@@ -1,0 +1,11 @@
+---
+
+root_free_inodes:
+  name: Ensure there are at least 30% free inodes on /
+  command: test $(df -i | grep "/$" | xargs | cut -d ' ' -f 5 | sed "s/%//") -lt 70
+
+root_free_diskspace:
+  name: Ensure there is at least 30% free disk space on /
+  command: test $(df | grep "/$" | xargs | cut -d ' ' -f 5 | sed "s/%//") -lt 70
+
+...
